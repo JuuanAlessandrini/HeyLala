@@ -1,0 +1,27 @@
+/*Catalogo*/
+.prod{
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+    color: $colorprincipal;
+    }
+    .cate{
+    color: $colorprincipal;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    background: $colorsecundario;
+    }
+    .accesos{
+    flex-direction: column;
+    font-size: 20px;
+    color: $colorprincipal;
+    padding: 100px;
+    margin: 100px;
+    background-image: linear-gradient($colorsecundario, $colorprincipal);
+    }
+    .carousel{
+        width: 20%;
+        height: 20%;
+        margin-bottom: 6%;
+    }

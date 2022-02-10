@@ -1,0 +1,62 @@
+    /*IniciarSesion*/
+    .formulario{
+        font-family: 'calibri';
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        border-radius: 2%;
+        background: $colorsecundario;
+        margin-top: 150px;
+        padding: 30px 20px;
+        color: white
+        box-shadow 7px 13px 37px #000;
+        }
+        h3{
+        text-align: center;
+        color: $colorprincipal;
+        font-size: 40px;
+        }
+        .contenedor{
+        width: 100%;
+        padding: 25px 100px;
+        }
+        .input-contenedor{
+        margin-bottom: 12%;
+        border: 1px solid $colorprincipal;
+        }
+        input[type="texto"],
+        input[type="passwordo"]{
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        }
+        .button{
+        border: none;
+        width: 100%;
+        color: $colorprincipal;
+        font-size: 20px;
+        background:  #1f53c5;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .button:hover{
+        background: cadetblue;
+        }
+        p{
+        text-align: center;
+        color: $colorprincipal;
+        }
+        .link{
+        text-decoration: none;
+        color: #1a2537;
+        font-weight: 600;
+        }
+        .link:hover{
+        color: white;
+        }
+        @media(min-width:768px)
+        {
+        }
