@@ -1,2 +1,31 @@
-$colorprincipal: #BDF6E0;
-$colorsecundario: #A3BFD4;
+$colorprincipal: #ffffff;
+$colorsecundario: rgba(132, 132, 132, 0.3);
+$colorletra:#848484;
+
+$colores: (
+    primario: #ffffff,
+    secundario: rgba(132, 132, 132, 0.3),
+    letras: #848484,
+    hover-primario: cadetblue,
+    hover-secundario: white
+);
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexbox ($direction, $justify, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+$tamanios: 
+100%,
+75%,
+50%,
+25%;

@@ -4,7 +4,7 @@
         height: auto; overflow: hidden;
         border: 0px solid;
         float:left;
-        background: $colorsecundario;
+        background: map-get($colores , secundario );
         margin: auto;
         }
         .texto-contacto{
@@ -13,16 +13,17 @@
         .email-contacto{
         color: #848484;
         text-decoration: none;
+            .email-contacto:hover{
+            text-decoration: underline;
+            }
         }
-        .email-contacto:hover{
-        text-decoration: underline;
-        }
+        
         .derecha{
         width: 490px;
         border: 0px solid;
         height: auto; overflow: hidden;
         float: right;
-        background: $colorsecundario;
+        background: map-get($colores , secundario );
         margin: auto;
         }
         input[type="text"], input[type="email"]{

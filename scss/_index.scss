@@ -3,43 +3,37 @@
         height: 200%;
         width: 100%;
         }
-        .contenedor-imagenes{
-        display: flex;
-        width: 90%;
-        height: auto; 
-        flex-wrap: wrap;
-        margin: auto;
-        }
-        .contenedor-imagenes .img-fluid{
-        width: 200px;
-        height: 400px;
-        object-fit: cover;
-        margin: 2%;
-        transition: all 1s;
-        }
-        .contenedor-imagenes .img-fluid:hover{
-        transform: scale(2,2);
-        z-index: 100;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        .carousel{
+            display: flex;
+            width: auto;
+            height: auto;
         }
         .h21{
         height: 80px;
         background-image: linear-gradient($colorsecundario, $colorprincipal);
-        color: $colorprincipal;
+        color: map-get($colores , letras );
         text-align: center;
+        margin-top: 10px;
         }
-        .categorias{
-        display: grid;
-        grid-auto-flow: row;
-        color: $colorprincipal;
+        .contenedor-imagenes{
+            @extend %flexrow;
+            width: 90%;
+            height: auto;
+            margin: auto;
         }
-        .categorias a{
-        background: $colorsecundario;
-        color: $colorprincipal;
-        font: size 50px 0px;
-        text-align: center;
+        .contenedor-imagenes .img-fluid{
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            margin: 2%;
+            transition: all 1s;
+        }
+        .contenedor-imagenes .img-fluid:hover{
+            transform: scale(2,2);
+            z-index: 100;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         }
         .contenedor-index .form-control{
         width: 50px;
@@ -55,16 +49,15 @@
         margin-top: 1%;
         font-size: 25px;
         background-image: linear-gradient($colorsecundario, $colorprincipal);
-        color: $colorprincipal;
+        color: map-get($colores , letras );
         }
         .p1{
         height: 30px;
         text-align: center;
         margin: 10px;
         font-size: 20px;
-        background: $colorsecundario;
-        color: $colorprincipal;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: map-get($colores , secundario );
+        color: map-get($colores , letras );
         }
         .form-control{
         width: 50px;
