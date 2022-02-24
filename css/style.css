@@ -70,14 +70,6 @@ header {
   transition: all 1s;
 }
 
-.contenedor-imagenes .img-fluid:hover {
-  transform: scale(2, 2);
-  z-index: 100;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
 .contenedor-index .form-control {
   width: 50px;
   height: 50px;
