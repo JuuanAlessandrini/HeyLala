@@ -1,11 +1,16 @@
     /*Contacto*/
+    .navbar{
+        background-color: $colorsecundario;
+    }
     .izquierda{
-        width: 300px;
+        width: 350px;
         height: auto; overflow: hidden;
         border: 0px solid;
-        float:left;
         background: map-get($colores , secundario );
         margin: auto;
+        }
+        .texto-contacto{
+            color: #848484;
         }
         .texto-contacto{
         text-align: center;
@@ -19,10 +24,9 @@
         }
         
         .derecha{
-        width: 490px;
+        width: 350px;
         border: 0px solid;
         height: auto; overflow: hidden;
-        float: right;
         background: map-get($colores , secundario );
         margin: auto;
         }
@@ -56,7 +60,7 @@
         }
         .mapa{
         width: 100%;
-        height: auto; overflow: hidden;
+        height: 50%; overflow: hidden;
         padding: auto;
         margin: auto;
         }

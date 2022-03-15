@@ -36,7 +36,15 @@ header {
   height: 60px;
 }
 
+.navbar {
+  z-index: 10;
+}
+
 /*Index*/
+.navbar {
+  background-color: rgba(132, 132, 132, 0.3);
+}
+
 .logo {
   height: 200%;
   width: 100%;
@@ -50,6 +58,7 @@ header {
 
 .h21 {
   height: 80px;
+  margin: auto;
   background-image: linear-gradient(rgba(132, 132, 132, 0.3), #ffffff);
   color: #848484;
   text-align: center;
@@ -79,7 +88,7 @@ header {
 }
 
 .h22 {
-  height: 80px;
+  height: initial;
   text-align: center;
   justify-items: center;
   margin-top: 1%;
@@ -89,9 +98,9 @@ header {
 }
 
 .p1 {
-  height: 30px;
+  height: 50px;
   text-align: center;
-  margin: 10px;
+  margin: 50px;
   font-size: 20px;
   background: rgba(132, 132, 132, 0.3);
   color: #848484;
@@ -105,11 +114,10 @@ header {
 }
 
 .contenedor-barras {
-  display: grid;
   text-align: center;
   padding-left: 35%;
   padding-right: 35%;
-  margin: 1%;
+  margin: auto;
 }
 
 /*IniciarSesion*/
@@ -120,7 +128,7 @@ header {
   margin-bottom: 100px;
   border-radius: 2%;
   background: rgba(132, 132, 132, 0.3);
-  margin-top: 150px;
+  margin-top: 100px;
   padding: 30px 20px;
   color: white box-shadow 7px 13px 37px #000;
 }
@@ -176,7 +184,17 @@ p {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .formulario {
+    width: 350px;
+  }
+}
+
 /*Crear Cuenta*/
+.navbar {
+  background-color: #848484;
+}
+
 .crearcuenta {
   font-size: 40px;
   text-align: center;
@@ -244,7 +262,17 @@ p {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  .form-register {
+    width: 200px;
+  }
+}
+
 /*Catalogo*/
+.navbar {
+  background-color: #848484;
+}
+
 .card-group {
   align-items: center;
 }
@@ -292,14 +320,21 @@ p {
 }
 
 /*Contacto*/
+.navbar {
+  background-color: rgba(132, 132, 132, 0.3);
+}
+
 .izquierda {
-  width: 300px;
+  width: 350px;
   height: auto;
   overflow: hidden;
   border: 0px solid;
-  float: left;
   background: rgba(132, 132, 132, 0.3);
   margin: auto;
+}
+
+.texto-contacto {
+  color: #848484;
 }
 
 .texto-contacto {
@@ -316,11 +351,10 @@ p {
 }
 
 .derecha {
-  width: 490px;
+  width: 350px;
   border: 0px solid;
   height: auto;
   overflow: hidden;
-  float: right;
   background: rgba(132, 132, 132, 0.3);
   margin: auto;
 }
@@ -360,7 +394,7 @@ input[type="submit"] {
 
 .mapa {
   width: 100%;
-  height: auto;
+  height: 50%;
   overflow: hidden;
   padding: auto;
   margin: auto;

@@ -1,4 +1,7 @@
     /*Crear Cuenta*/
+    .navbar{
+        background-color: $colorletra;
+    }
     .crearcuenta{
         font-size: 40px;
         text-align: center;
@@ -61,4 +64,9 @@
         color: map-get($colores , principal );
         margin: 16px 0;
         font-size: 16px;
+        }
+        @media only screen and (max-width: 768px){
+            .form-register {
+                width: 200px;
+                }
         }

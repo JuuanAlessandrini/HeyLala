@@ -1,4 +1,7 @@
     /*Index*/
+    .navbar{
+        background-color: $colorsecundario;
+    }
     .logo{
         height: 200%;
         width: 100%;
@@ -10,6 +13,7 @@
         }
         .h21{
         height: 80px;
+        margin: auto;
         background-image: linear-gradient($colorsecundario, $colorprincipal);
         color: map-get($colores , letras );
         text-align: center;
@@ -36,7 +40,7 @@
         font-size: 20px;
         }
         .h22{
-        height: 80px;
+        height: initial;
         text-align: center;
         justify-items: center;
         margin-top: 1%;
@@ -45,9 +49,9 @@
         color: map-get($colores , letras );
         }
         .p1{
-        height: 30px;
+        height: 50px;
         text-align: center;
-        margin: 10px;
+        margin: 50px;
         font-size: 20px;
         background: map-get($colores , secundario );
         color: map-get($colores , letras );
@@ -59,9 +63,8 @@
         padding: 10px 150px 10px;
         }
         .contenedor-barras{
-        display: grid;
         text-align: center;
         padding-left: 35%;
         padding-right: 35%;
-        margin: 1%;
+        margin: auto;
         }
